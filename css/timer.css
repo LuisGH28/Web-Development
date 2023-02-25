@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #FFE7CC;
+}
+
+.timer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px; 
+}
+
+input{
+  border: none;
+  text-align: center;
+  font-size : 1.5em;
+  text-align: center;
+  background-color: #FFE7CC;
+}
+
+.menu{
+  text-decoration: none;
+  margin: 2% 10% 0 10%;
+}

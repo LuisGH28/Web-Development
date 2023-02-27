@@ -8,14 +8,26 @@
 
 body{
   background-color: #F8CBA6;
+  position:relative;
 }
 
 .top--bar{
-  background-color: #F8CBA6;
   display: flex;
   justify-content: center;
 }
 
 h1{
   text-align: center;
-  }
+  margin-top: 0%;
+}
+
+.top--bar img{
+  height: 100%;
+  vertical-align: top;
+  display: flex;
+  margin: 0%;
+}
+
+.top--bar img:first-child{
+  margin-right: 10px;
+}

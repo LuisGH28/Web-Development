@@ -9,9 +9,18 @@
 body{
   background-color: #F8CBA6;
   text-align: center;
+  /*padding: 3%;*/
+  margin: 3%;
+}
+
+h2{
+  margin-bottom: 1%;
 }
 
 a{
   text-decoration: none;
   color: #000000;
+  margin-left: 2%;
+  text-align: center;
+
 }

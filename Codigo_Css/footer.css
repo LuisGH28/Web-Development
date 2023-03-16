@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -6,18 +6,18 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color: #F8CBA6;
+body {
+  background-color: #f8cba6;
   text-align: center;
   /*padding: 3%;*/
   margin: 3%;
 }
 
-h2{
+h2 {
   margin-bottom: 1%;
 }
 
-a{
+a {
   text-decoration: none;
   color: #000000;
   margin-left: 2%;
@@ -45,7 +45,7 @@ body {
 }
 
 .footer > * {
-  flex:  1 100%;
+  flex: 1 100%;
 }
 
 .footer__addr {
@@ -54,7 +54,7 @@ body {
 }
 
 .footer__logo {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   font-weight: 400;
   text-transform: lowercase;
   font-size: 2rem;
@@ -86,7 +86,7 @@ body {
 
 .footer__nav {
   display: flex;
-	flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .footer__nav > * {

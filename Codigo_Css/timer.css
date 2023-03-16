@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -6,13 +6,24 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #FFE7CC;
 }
 
-.menu{
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 15px;
   text-decoration: none;
-  margin: 1% 10% 0 10%;
+}
+
+li a:hover {
+  background-color: #F8CBA6;
 }
 
 #box {

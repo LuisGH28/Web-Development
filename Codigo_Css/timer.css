@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #FFE7CC;
+}
+
+.menu{
+  text-decoration: none;
+  margin: 1% 10% 0 10%;
+}
+
+#box {
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  max-width: 180px;
+  float: right;
+}
+
+#box-date {
+  margin: auto 0;
+  display: block;
+  color: #000000;
+  font-size: 18px;
+}
+
+#box-time {
+  color: #000000;
+  font-size: 18px;
+  display: block;
+}

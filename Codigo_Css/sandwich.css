@@ -10,6 +10,38 @@ header {
   background-color: #ff9a3f;
 }
 
+.container {
+  height: 70px;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.logo {
+  height: 120px;
+}
+
+.logo img {
+  height: 100%;
+  vertical-align: top;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+
+
 .footer {
   background-color: #fffb9d;
 }

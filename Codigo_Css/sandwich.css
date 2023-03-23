@@ -66,9 +66,25 @@ li a {
 }
 
 .who__are__we {
-   width: 85%;
+  width: 85%;
+  font-size: 25px;
   max-width: 850px;
   margin: 0 auto;
+  line-height: 90%;
+}
+
+.name {
+  font-style: italic;
+  font-size: 30px;  
+  background: -webkit-linear-gradient(left top, red, yellow);
+  background: linear-gradient(to bottom right, red, yellow);
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent; 
+}
+
+.who__are__we p {
+  margin-bottom: 3%;
+  color: #000000;
 }
 
 .footer {
@@ -130,7 +146,7 @@ li a {
   margin-right: 1.25em;
 }
 
-.nav__ul a {
+.nav__ul a, p{
   color: #999;
 }
 

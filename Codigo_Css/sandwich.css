@@ -70,7 +70,6 @@ li a {
   font-size: 25px;
   max-width: 850px;
   margin: 0 auto;
-  line-height: 90%;
 }
 
 .name {
@@ -85,6 +84,17 @@ li a {
 .who__are__we p {
   margin-bottom: 3%;
   color: #000000;
+}
+
+
+.options {
+  width: 85%;
+  max-width: 850px;
+  margin: 5% auto;
+}
+
+.meal {
+  
 }
 
 .footer {

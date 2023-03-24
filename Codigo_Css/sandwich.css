@@ -9,10 +9,11 @@
 body {
   font-family: acumin-pro, system-ui, sans-serif;
   margin: 0;
+  padding: 0;
   display: grid;
   grid-template-rows: auto 1fr auto;
   font-size: 14px;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
   align-items: start;
   min-height: 100vh;
 }
@@ -70,6 +71,7 @@ li a {
   font-size: 25px;
   max-width: 850px;
   margin: 0 auto;
+  padding: 5%;
 }
 
 .name {
@@ -88,13 +90,68 @@ li a {
 
 
 .options {
-  width: 85%;
-  max-width: 850px;
-  margin: 5% auto;
+  display: flex;
+  justify-content: center;
+  background-color: #efefef;
 }
 
-.meal {
-  
+.card img {
+  width: 100%;
+}
+
+.card {
+  width: 20%;
+  margin: 30px;
+  background-color: #ffffff;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 1px 1px 11px 0 #00000030;
+}
+
+h2 {
+  font-size: 17px;
+  color: rgb(226, 124, 124);
+  padding: 5%;
+}
+
+.paragraph {
+  color: #808080;
+  padding: 5%;
+}
+
+.choose {
+  border: none;
+  background-color: #ffffff;
+}
+
+.btn {
+  overflow: hidden;
+	width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+.accept {
+  border: 2px solid #ff9a3f;
+  float: left;
+  padding: 5%;
+  cursor: pointer;
+}
+
+.accept:hover {
+  background-color: #ff9a3f;
+}
+
+.decline {
+  border: 2px solid #ff9a3f;
+  float: right;
+  padding: 5%;
+  cursor: pointer;
+}
+
+.decline:hover {
+  background-color: #ff9a3f;
 }
 
 .footer {

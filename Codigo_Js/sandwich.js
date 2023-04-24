@@ -1,5 +1,3 @@
-//alert("Bienvenido la Torteria");
-
 function sale() {
   var sumPrice = 0;
   var nameOne = "Torta de Jamon"; 

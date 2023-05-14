@@ -14,7 +14,7 @@
       die('No se pudo conectar a la Base de Datos, lo siento: ' . $mysqli->connect_error);
     }
 
-    echo '¡Conexión exitosa!';
+    echo '¡Conexión exitosa! :)';
   ?>
 </body>
 </html>

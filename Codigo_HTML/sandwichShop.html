@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Torteria</title>
+    <link rel="stylesheet" href="../Codigo_Css/sandwich.css" />
+    <script src="../Codigo_Js/sandwich.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <figure class="logo">
+          <a href="../Codigo_HTML/sandwichShop.html" target="information">
+            <img src="../Imagenes/猫.png" alt="Logo" />
+          </a>
+        </figure>
+
+        <menu class="sandwich--menu">
+          <ul>
+            <li>
+              <a href="#begin">Inicio</a>
+            </li>
+
+            <li>
+              <a href="#service">Menu</a>
+            </li>
+
+            <li>
+              <a href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </menu>
+      </nav>
+    </header>
+
+    <main>
+      <section class="menu">
+        <picture class="begin" id="begin">
+          <img src="../Imagenes/dobleCubana.jpeg" alt="Doble Cubana" />
+        </picture>
+
+        <article class="who__are__we">
+          <p>
+            <span class="name">Torteria AME</span> tenemos 5 años de experiencia
+            en distintos tipos de platos, los cuales van desde tortas y hamburguesas.
+            <br />
+          </p>
+          <p>
+            Te invitamos a que pruebaes las mejores tortas de Atizapan de Zaragoza.
+            <br />
+          </p>
+          <p>
+            Cada alimento es elaborado bajo estrictas normas de higiene y con la
+            calidad de todos los insumos que empleamos para poder garantizar un
+            producto digno para su consumo y el de su familia.
+            <br />
+          </p>
+        </article>
+
+        
+        <form action="" method="get">
+          <menu class="options" id="service">
+            <div class="card">
+
+              <img src="../Imagenes/hamCake.jpeg" alt="Torta de Jamon">
+
+              <h2>Torta de Jamon</h2>
+
+              <select name="pedidoUno" id="pedidoUno" class="choose">
+                <option value="Con Picante">
+                  Con Picante
+                </option>
+
+                <option value="Sin Picante">
+                  Sin Picante
+                </option>
+              </select>
+
+              <p class="paragraph">
+                Precio: $30.00
+              </p>
+
+              <p class="paragraph">
+                Cantidad: 
+              </p>
+
+              <input type="number" name="cantidadUno" id="cantidadUno" min="0" class="number">
+            </div>
+
+            <div class="card">
+              <img src="../Imagenes/cubana.jpeg" alt="Torta Cubana">
+
+              <h2>Torta Cubana</h2>
+
+              <select name="orderTwo" id="orderTwo" class="choose">
+                <option value="Con picante">
+                  Con Picante
+                </option>
+
+                <option value="Sin picante">
+                  Sin Picante
+                </option>
+              </select>
+
+              <p class="paragraph">
+                Precio: $75.00
+              </p>
+
+              <p class="paragraph">
+                Cantidad: 
+              </p>
+
+              <input type="number" name="amoutTwo" id="amoutTwo" min="0" class="number">
+            </div>
+
+            <div class="card">
+              <img src="../Imagenes/dobleCubanaa.jpeg" alt="Torta Doble Cubana">
+
+              <h2>Torta Doble Cubana</h2>
+
+              <select name="orderThree" id="orderThree" class="choose">
+                <option value="Con picante">
+                  Con Picante
+                </option>
+
+                <option value="Sin picante">
+                  Sin Picante
+                </option>
+              </select>
+
+              <p class="paragraph">
+                Precio: $150.00
+              </p>
+
+              <p class="paragraph">
+                Cantidad: 
+              </p>
+
+              <input type="number" name="amoutThree" id="amoutThree" min="0" class="number">
+            </div>
+
+            <div class="card">
+              <img src="../Imagenes/milanesa.jpeg" alt="Torta de Milanesa">
+
+              <h2>Torta de Milanesa</h2>
+
+              <select name="orderFour" id="orderFour" class="choose">
+                <option value="Con Picante">
+                  Con Picante
+                </option>
+
+                <option value="Sin Picante">
+                  Sin Picante
+                </option>
+              </select>
+
+              <p class="paragraph">
+                Precio: $40.00
+              </p>
+
+              <p class="paragraph">
+                Cantidad: 
+              </p>
+
+              <input type="number" name="amoutFour" id="amoutFour" min="0" class="number">
+            </div>
+
+            <div class="card">
+              <img src="../Imagenes/michiHamburguesa.jpeg" alt="Michi Hamburguesa">
+
+              <h2>Michi Hamburguesa</h2>
+
+              <select name="orderFive" id="orderFive" class="choose">
+                <option value="Con Picante">
+                  Con Picante
+                </option>
+
+                <option value="Sin Picante">
+                  Sin Picante
+                </option>
+              </select>
+
+              <p class="paragraph">
+                Precio: $50.00
+              </p>
+
+              <p class="paragraph">
+                Cantidad: 
+              </p>
+
+              <input type="number" name="amoutFice" id="amoutFive" min="0" class="number">
+            </div>
+          </menu>
+          <section class="btn">
+            <div class="accept" onclick="sale()">
+              Realizar Pedido
+            </div>
+
+            <input class="decline" type="reset" value="Cancelar Pedido" />
+            
+          </section>
+        </form>
+        <section class="who__are__we" id="contact">
+          <p>Nos encuentras de Lunes a Sabado de 9 am a 20 pm.</p>
+
+          <p>
+            Aceptamos pagos en efectivo, por transferencia y aceptamos tarjetas
+            VISA y MASTERCARD.
+          </p>
+
+          <p>
+            Nuestro número telefonico es: 55-6677-8899, puedes encontrarnos en
+            Facebook como: Tortas AME
+          </p>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__addr">
+        <a href="../Codigo_HTML/sandwichShop.html" target="information"
+          ><img class="footer__logo" src="../Imagenes/猫.png" />
+        </a>
+      </div>
+
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Contacto</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="mainto:tortasame@email.com"> tortasame@email.com </a>
+            </li>
+
+            <li>
+              <p>55 6677 8899</p>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <h2 class="nav__title">Opciones</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#begin">Inicio</a>
+            </li>
+
+            <li>
+              <a href="#service">Menu</a>
+            </li>
+
+            <li>
+              <a href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

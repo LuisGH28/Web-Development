@@ -6,62 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Practica 08 Php</title>
 </head>
-<style>
-
-  body {
-    font-family: acumin-pro, system-ui, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    font-size: 14px;
-    background-color: #ffffff;
-    align-items: start;
-    min-height: 100vh;
-  }
-
-  section {
-    height: 70px;
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center
-  }
-
-  ul {
-    list-style: none;
-    float: right;
-  }
-
-  li{
-    float: right;
-  }
-
-  li a {
-  display: block;
-  color: #000000;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-}
-
-</style>
 <body>
-  <section>
-
-    Escoja una opción
-    <menu>
+  <h1>Realizar las siguientes practicas en php</h1>
+  <form action="../Codigo_PHP/relojDigital.php" method="get">
+    <section class="practiceOne">
+      <h2>Practica 1</h2>
+  
+      <p>En un archivo PHP, denominado RelojDigital.</p>
+  
       <ul>
         <li>
-          <a href="../Codigo_PHP/relojDigital.php">Reloj Digital</a>
+          Se requiere un reloj DIGITAL, de tal forma que muestre las HORAS, MINUTOS, SEGUNDOS.  
         </li>
         <li>
-          <a href="../Codigo_PHP/edadCalculo.php">Calcular Edad</a>
+          Se deberá utilizar las tres estructuras de BUCLE. 
         </li>
       </ul>
-    </menu>
-  </section>
+      
+      <p> NOTA: En este ejercicio se evalúa el uso de las estructuras de repetición (BUCLES), no la presentación del resultado. </p>
+  
+      <p>Para ver la practica hacer clic en el siguiente boton:</p>
+      <input type="submit" value="Reloj Digital">
+    </section>
+  </form>
+
+  <form action="../Codigo_PHP/edadCalculo.php" method="get">
+    <section class="practiceTwo">
+      <h2>Practica 2</h2>
+
+      <p>Crear en otro archivo PHP, denominado EdadCalculo.</p>
+
+      <ul>
+        <li>
+          Un programa que, por medio de teclado, se Introduzca el MES y el AÑO de nacimiento de una persona, y regrese como resultado la edad cumplida en años. 
+        </li>
+      </ul>
+      
+      <p>Considerar el mes y año ACTUAL.</p>
+
+      <p>Ingrese su mes de nacimiento:</p>
+      <input type="text" name="month" id="">
+
+      <p>Ingrese su año de nacimiento</p>
+      <input type="text" name="year" id="">
+
+      <input type="submit" value="Calcular Edad">
+    </section>  
+  </form>
 </body>
 </html>

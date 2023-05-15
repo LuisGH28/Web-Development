@@ -8,7 +8,7 @@
 </head>
 <body>
   <?php 
-   $mysqli = new mysqli('localhost', 'root', '', '');
+   $mysqli = new mysqli('localhost', 'root', '1234', '13_GHL');
 
     if ($mysqli->connect_error) {
       die('No se pudo conectar a la Base de Datos, lo siento: ' . $mysqli->connect_error);

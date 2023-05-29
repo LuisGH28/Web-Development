@@ -1,5 +1,5 @@
 <?php
-  echo 'Conexión cerrada exitosamente :)';
+  echo '<h1> Conexión cerrada exitosamente :) </h1>';
   session_start();
   $mysqli = $_SESSION['conexion'];
 

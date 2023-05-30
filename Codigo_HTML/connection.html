@@ -4,68 +4,87 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coneccxion a la BD</title>
+  <title>Conexion a la BD</title>
   <link rel="stylesheet" href="../Codigo_Css/connection.css">
 </head>
 <body>
   <form action="../Codigo_PHP/connection.php" method="post">
       <section class="instrucctions">
-      <p>Crea una Base de Datos (puede ser la de tu proyecto) en MySQL.</p> 
+        <p>Crea una Base de Datos (puede ser la de tu proyecto) en MySQL.</p> 
 
-      <p> Realiza las siguientes actividades:</p>
+        <p> Realiza las siguientes actividades:</p>
 
-      <ul>
-        <li>
-          Crea un archivo en PHP que permita la conexión a la Base de datos creada.
-        </li>
-        <li>
-          Genera un archivo que CIERRE la conexión.
-        </li>
-      </ul>
+        <ul>
+          <li>
+            Crea un archivo en PHP que permita la conexión a la Base de datos creada.
+          </li>
+        
+          <li>
+            Genera un archivo que CIERRE la conexión.
+          </li>
+        </ul>
 
-      <p>En ambos casos, deberás de indicar por medio de un texto que las acciones indicadas se realizaron satisfactoriamente.</p>
+        <p>En ambos casos, deberás de indicar por medio de un texto que las acciones indicadas se realizaron satisfactoriamente.</p>
 
-      <p>Nota: Crea el archivo de conexión de tal forma que los datos puedan ser distintos, esto es, cualquier usuario con su respectiva contraseña conectarse a cualquier base de datos.</p>
-    </section>
+        <p>Nota: Crea el archivo de conexión de tal forma que los datos puedan ser distintos, esto es, cualquier usuario con su respectiva contraseña conectarse a cualquier base de datos.</p>
+      </section>
 
-    <section class="page">
-      <div class="field">
-        <label for="first-name" class="ha-screen-reader">Servidor</label>
-        <input type="text" name="server" id="first-name" class="field__input" placeholder="e.g. localhost">
-        <span class="field__label-wrap" aria-hidden="true">
-        <span class="field__label">Servidor</span>
-        </span>
-      </div>
-    </section>
+    <main class="main">
+      <section class="page">
+        <div class="field">
+          <label for="first-name" class="ha-screen-reader">Servidor</label>
+          <input type="text" name="server" id="server" class="field__input" placeholder="e.g. localhost">
+          <span class="field__label-wrap" aria-hidden="true">
+            <span class="field__label">Servidor</span>
+          </span>
+        </div>
+      </section>
     
-    <section class="page">
-      <div class="field">
+      <section class="page">
+        <div class="field">
           <label for="first-name" class="ha-screen-reader">Usuario</label>
-        <input type="text" name="user" id="first-name" class="field__input" placeholder="e.g. root">
-        <span class="field__label-wrap" aria-hidden="true">
-        <span class="field__label">Usuario</span>
-        </span>
-      </div>
-    </section>
+          <input type="text" name="user" id="user" class="field__input" placeholder="e.g. root">
+          <span class="field__label-wrap" aria-hidden="true">
+            <span class="field__label">Usuario</span>
+          </span>
+        </div>
+      </section>
 
-    <p>Ingrese la contraseña</p>
-    <input type="password" name="password" id="password" />
+      <section class="page">
+        <div class="field">
+          <label for="first-name" class="ha-screen-reader">Contraseña</label>
+          <input type="password" name="password" id="pw" class="field__input" placeholder="e.g. 1234">
+          <input class="btn-submit" type="button" value="Mostrar Contraseña" onclick="showPassword()">
+          <span class="field__label-wrap" aria-hidden="true">
+            <span class="field__label">Contraseña</span>
+          </span>
+        </div>
+      </section>
 
-    <section class="page">
-      <div class="field">
-        <label for="first-name" class="ha-screen-reader">Base de Datos</label>
-        <input type="text" name="db" id="first-name" class="field__input" placeholder="e.g. mysqli">
-        <span class="field__label-wrap" aria-hidden="true">
-        <span class="field__label">Base de Datos</span>
-        </span>
-      </div>
-    </section>
+      <section class="page">
+        <div class="field">
+          <label for="first-name" class="ha-screen-reader">Base de Datos</label>
+          <input type="text" name="db" id="db" class="field__input" placeholder="e.g. mysql">
+          <span class="field__label-wrap" aria-hidden="true">
+            <span class="field__label">Base de Datos</span>
+          </span>
+        </div>
+      </section>
   
-
-    <input type="submit" value="Conectar a la Base de datos" />
-
-    <input type="reset" value="Limpiar casillas" />
+      <section class="page">
+        <div class="btn">
+          <input class="btn-submit"  type="submit" value="Conectar a la Base de datos" />
+          <input class="btn-submit" type="reset" value="Limpiar casillas" />
+        </div>
+      </section>
+    </main>
   </form>
 
+  <script>
+    function showPassword(){
+      var kind = document.getElementById("pw");
+      kind.type = kind.type === "password" ? "text" : "password";
+    }
+  </script>
 </body>
 </html>

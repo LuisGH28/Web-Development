@@ -16,6 +16,7 @@
     include 'connection.php';
 
     //Now i make to start with the query
+    echo "<br/>";
     $sql = "SELECT Producto.Nombre, Producto.Presentacion_Producto, Producto.Precio FROM Producto ORDER BY Precio";
     $result = $mysqli->query($sql);
 
@@ -33,10 +34,14 @@
       }
       
       echo "</table>";
+      echo "<br/>";
     } else {
       echo "No se encontraron resultados :(";
     }
+
   
+    echo 'Ahora se va a cerrar la conexión por medio del archivo closeConnection.php';
+
     //Now include the file who close the connection
     include 'closeConnection.php';
   ?>

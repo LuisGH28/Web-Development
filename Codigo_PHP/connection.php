@@ -32,13 +32,11 @@
 
     echo "<h1> ¡Conexión exitosa! :) </h1> <br/>";
 
-    echo 'Ahora se va a cerrar la conexión por medio del archivo closeConnection.php';
 
     //in this part save the connection 
     $_SESSION['conexion'] = $mysqli;
 
-    include 'closeConnection.php';
-  ?>
+   ?>
 </body>
 </html>
 

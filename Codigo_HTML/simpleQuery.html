@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta Simmple</title>
+  <link rel="stylesheet" href="../Codigo_Css/connection.css">
+</head>
+<body>
+  <form action="../Codigo_PHP/simpleQuery.php" method="post">
+    <section class="instructions">
+      <p>Enunciado de la problemática:</p>
+        <ul>
+          <li>
+            Mostrar los Productos junto con su precio ordenado de  menor a mayor (Consulta Simple).
+          </li>
+        </ul>
+        <p>Enunciado de la sentencia SQL</p>
+        <ul>
+          <li>
+            <code> Select Producto.Nombre, Producto.Presentacion_Producto, Producto.Precio From Producto order by Precio; </code>
+          </li>
+        </ul>
+    </section>
+
+    <main class="main">
+      <section class="page">
+        <div class="field">
+          <label for="first-name" class="ha-screen-reader">Servidor</label>
+          <input type="text" name="server" id="server" class="field__input" placeholder="e.g. localhost">
+          <span class="field__label-wrap" aria-hidden="true">
+            <span class="field__label">Servidor</span>
+          </span>
+        </div>
+      </section>
+    
+      <section class="page">
+        <div class="field">
+          <label for="first-name" class="ha-screen-reader">Usuario</label>
+          <input type="text" name="user" id="user" class="field__input" placeholder="e.g. root">
+          <span class="field__label-wrap" aria-hidden="true">
+            <span class="field__label">Usuario</span>
+          </span>
+        </div>
+      </section>
+
+      <section class="page">
+        <div class="field">
+          <label for="first-name" class="ha-screen-reader">Contraseña</label>
+          <input type="password" name="password" id="pw" class="field__input" placeholder="e.g. 1234">
+          <input class="btn-submit" type="button" value="Mostrar Contraseña" onclick="showPassword()">
+          <span class="field__label-wrap" aria-hidden="true">
+            <span class="field__label">Contraseña</span>
+          </span>
+        </div>
+      </section>
+
+      <section class="page">
+        <div class="field">
+          <label for="first-name" class="ha-screen-reader">Base de Datos</label>
+          <input type="text" name="db" id="db" class="field__input" placeholder="e.g. mysql">
+          <span class="field__label-wrap" aria-hidden="true">
+            <span class="field__label">Base de Datos</span>
+          </span>
+        </div>
+      </section>
+  
+      <section class="page">
+        <div class="btn">
+          <input class="btn-submit"  type="submit" value="Conectar a la Base de datos" />
+          <input class="btn-submit" type="reset" value="Limpiar casillas" />
+        </div>
+      </section>
+    </main>
+  </form>
+
+  <script>
+    function showPassword(){
+      var kind = document.getElementById("pw");
+      kind.type = kind.type === "password" ? "text" : "password";
+    }
+  </script>
+</body>
+</html>

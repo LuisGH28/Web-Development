@@ -15,6 +15,8 @@
     //First i'ma import the file connection.php
     include 'connection.php';
 
+    echo "Consulta SQL : SELECT Producto.Nombre, Producto.Presentacion_Producto, Producto.Precio FROM Producto ORDER BY Precio";
+
     //Now i make to start with the query
     echo "<br/>";
     $sql = "SELECT Producto.Nombre, Producto.Presentacion_Producto, Producto.Precio FROM Producto ORDER BY Precio";

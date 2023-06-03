@@ -4,22 +4,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Consulta Simmple</title>
+  <title>Consulta con Parametros</title>
   <link rel="stylesheet" href="../Codigo_Css/connection.css">
 </head>
 <body>
-  <form action="../Codigo_PHP/simpleQuery.php" method="post">
+  <form action="../Codigo_PHP/queryWithAggragateFunctions.php" method="post">
     <section class="instructions">
       <p>Enunciado de la problemática:</p>
         <ul>
           <li>
-            Mostrar los Productos junto con su precio ordenado de  menor a mayor (Consulta Simple).
+            Busca la suma de los valores totales de todos los tickets que contengan el producto "Capuchino".
+
+            <br/>
+            
+            Favor de en la ultima casilla ingresar el producto del cual se quiere saber el valor total.
           </li>
         </ul>
         <p>Enunciado de la sentencia SQL</p>
         <ul>
           <li>
-            <code>Select Producto.Nombre, Producto.Presentacion_Producto, Producto.Precio From Producto order by Precio; </code>
+            <code> Select sum(Total), Producto From Ticket where Producto = "Capuchino"; </code>
           </li>
         </ul>
     </section>
@@ -67,11 +71,22 @@
       </section>
   
       <section class="page">
+        <div class="field">
+          <label for="first-name" class="ha-screen-reader">Producto a Buscar</label>
+          <input type="text" name="product" id="product" class="field__input" placeholder="e.g. Capuchino">
+          <span class="field__label-wrap" aria-hidden="true">
+            <span class="field__label">Producto a Buscar </span>
+          </span>
+        </div>
+      </section>
+
+      <section class="page">
         <div class="btn">
           <input class="btn-submit"  type="submit" value="Conectar a la Base de datos" />
           <input class="btn-submit" type="reset" value="Limpiar casillas" />
         </div>
       </section>
+
     </main>
   </form>
 
@@ -81,5 +96,6 @@
       kind.type = kind.type === "password" ? "text" : "password";
     }
   </script>
+
 </body>
 </html>

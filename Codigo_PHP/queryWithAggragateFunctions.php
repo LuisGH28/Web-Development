@@ -13,9 +13,18 @@
     include 'connection.php';
 
     //make the query
-    $producto = "Capuchino";
+    $producto = $_POST['product'];
 
+    if (empty($producto)){
+      echo "Por favor, complete todos los campos del formulario.";
+      exit;
+    }
     
+    echo "Consulta sql: SELECT SUM(Total) as totalSum, Producto FROM Ticket WHERE Producto = '$producto'";
+    echo "producto recibe el valor que se dio en el html";
+
+
+    //make the query
     $query = "SELECT SUM(Total) as totalSum, Producto
           FROM Ticket
           WHERE Producto = '$producto'";

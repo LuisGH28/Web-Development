@@ -20,6 +20,8 @@
     //Now i make to start with the query
     echo "<br/>";
     $sql = "SELECT Producto.Nombre, Producto.Presentacion_Producto, Producto.Precio FROM Producto ORDER BY Precio";
+    echo "<br/>";
+
     $result = $mysqli->query($sql);
 
     

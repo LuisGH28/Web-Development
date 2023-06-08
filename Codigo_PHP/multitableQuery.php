@@ -12,6 +12,16 @@
     //First i'ma include the file that connect to the database
     include 'connection.php';
 
+    echo "<br/>";
+
+    echo "Consulta de multitabla";
+    echo "<br/>";
+
+    echo "Consulta SQL: SELECT Ticket.idTicket, Ticket.Producto, Ticket.Cantidad, Producto_Ticket.Presentacion, Ticket.Fecha, Ticket.Total
+          FROM Ticket
+          INNER JOIN Producto_Ticket ON Ticket.idTicket = Producto_Ticket.idTicket";
+        
+    echo "<br/>";
     //Now insert the script that make the query
     $query = "SELECT Ticket.idTicket, Ticket.Producto, Ticket.Cantidad, Producto_Ticket.Presentacion, Ticket.Fecha, Ticket.Total
           FROM Ticket

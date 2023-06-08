@@ -11,6 +11,19 @@
   <?php
     include 'connection.php';
 
+    echo "<br/>";
+
+    echo "Consulta de tablas cruzadas";
+    echo "<br/>";
+
+    echo "Consulta SQL: SELECT Producto,
+              SUM(CASE WHEN Fecha = '2023-04-05' THEN Cantidad ELSE 0 END) AS Venta_05,
+              SUM(CASE WHEN Fecha = '2023-04-07' THEN Cantidad ELSE 0 END) AS Venta_07
+              FROM Ticket
+              GROUP BY Producto";
+
+    echo "<br/>";
+    
     $query = "SELECT Producto,
               SUM(CASE WHEN Fecha = '2023-04-05' THEN Cantidad ELSE 0 END) AS Venta_05,
               SUM(CASE WHEN Fecha = '2023-04-07' THEN Cantidad ELSE 0 END) AS Venta_07
